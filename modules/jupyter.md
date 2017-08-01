@@ -1,11 +1,16 @@
 # Opening interactive jupyter notebook
 
-Start a job using **srun -N1 --cpus-per-task=24 --gres=gpu:4 --mem=0 --time=4-0:00:00 --pty bash**
-Use **tmux** to create a new sessions
-Press **CTRL + b c** to create more session
-Toggle between the sessions by pressing **CTRL + b session no.**
-close a session by pressing **CTRL + b x**
-In session 0 **~/DevOps/connection_scripts/slurm_create_one_port_mapping.sh** for Ssh mapping from compute node to head node[compute node]
-Go to your local terminal (on your laptop) **ssh -N -L 8899:localhost:8899 xingyul2@psych-o.hpc1.cs.cmu.edu** for Ssh mapping from local server
-Go into session 1 active environment and **jupyter notebook --no-browser --port=8899** to open a jupyter notebook on the server
-Open **http://localhost:8894** on local browser to use the jupyter notebook on your local computer
+1. Start a job with `srun`, such as `srun -N1 --cpus-per-task=24 --gres=gpu:4 --mem=0 --time=4-0:00:00 --pty bash`
+2. create several `tmux` sessions. a recap of tmux usage:
+    * Use `tmux` to create a new sessions
+    * Press `Ctrl+b c` to create more sessions
+    * Toggle between the sessions by pressing `Ctrl+b <session no>`
+    * close a session by pressing `Ctrl+b x`
+3. In one session (such as 0), run `~/DevOps/connection_scripts/slurm_create_one_port_mapping.sh` for SSH mapping from compute node to head node. You will see some port number given to you, such as `8899`. Denote it as `PORT`. **Keep this session open when running Jupyter**.
+4. The output of the above script should ask you to run a command like `ssh -N -L <PORT>:localhost:<PORT> <username>@psych-o.hpc1.cs.cmu.edu`. Go to your local terminal (on your laptop) and run it. **Keep this terminal open when running Jupyter.**
+5. Go into another `tmux` session (such as 1), active an appropriate Python environment, and run `jupyter notebook --no-browser --port=<PORT>` to open a jupyter notebook on the server
+6. Open `http://localhost:<PORT>` on local browser to use the jupyter notebook on your local computer
+7. When everything is finished, remember to kill the following things.
+    * `ssh` command on your local terminal
+    * `ssh` in the first session of the compute node. You **must** also run `kill $(lsof -t -i:<PORT>)` in the same session as an additional safety net. Otherwise, available ports may get fewer and fewer. After running this command, you may or may not get any output. Ignore that. Just remember to always run it after stopping the `ssh` in the compute node.
+    * `jupyter`.
