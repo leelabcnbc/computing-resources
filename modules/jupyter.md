@@ -1,6 +1,8 @@
 # Opening interactive jupyter notebook
 
-1. Start a job with `srun`, such as `srun -N1 --cpus-per-task=24 --gres=gpu:4 --mem=0 --time=4-0:00:00 --pty bash`
+As of 20170801, this works with the GPU nodes of the CNBC cluster. Similar methods should work for CPU nodes as well.
+
+1. Get an interactive session on a compute node with `srun`, such as `srun -N1 --cpus-per-task=24 --gres=gpu:4 --mem=0 --time=4-0:00:00 --pty bash`
 2. create several `tmux` sessions. a recap of tmux usage:
     * Use `tmux` to create a new sessions
     * Press `Ctrl+b c` to create more sessions
