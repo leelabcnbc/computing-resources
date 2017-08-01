@@ -19,9 +19,8 @@ please click the badge in the top to chat via Gitter. You can use it as long as 
 
 ### serious issues, such as broken hardware.
 
-Please email Dave (`dpane@cmu.edu`) (for all issues), cc'ing `help@cs.cmu.edu` (don't cc'ing if you are responsible for the issue. THIS IS IMPORTANT).
+Please email Dave (`dpane@cmu.edu`) for all issues. If you have a SCS account due to being affiliated with the SCS department, you may also cc `help@cs.cmu.edu`.
 
-Don't know whether you should be responsible for the issue? 
 Please review the twiki (<http://twiki.cnbc.cmu.edu>) about the policies, specifically:
 Cluster Usage Policies section & User Support section on (<http://twiki.cnbc.cmu.edu/do/view/CnbcUsers/ClusterPolicies>)  
 
