@@ -7,4 +7,4 @@
     * `--time=4-0:00:00` gives how long you want to run session. `4-0:00:00` means four days, `12:00:00` means 12 hours, etc.
 2. `squeue` to see a list of the current jobs
 3. `scancel jobID` to cancel a job. `scancel -u XXX` to cancel all jobs by user `XXX`.
-4. visit <https://slurm.schedmd.com> and <https://www.rc.fas.harvard.edu/resources/documentation/convenient-slurm-commands/#Controlling_jobs> for more details.
+4. visit <https://slurm.schedmd.com> and <https://www.rc.fas.harvard.edu/resources/documentation/convenient-slurm-commands/> for more details.
