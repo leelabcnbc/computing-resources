@@ -4,6 +4,6 @@
 
 2. Before you can install any Python-based programs, you must first install miniconda.
 
-3. Run **~/DevOps/shell_scripts/conda/install_miniconda.sh** INSTALL_PATH to install miniconda under INSTALL_PATH (better be full path under your home directory), whose default value is ~/miniconda2 if you don't specify it. It must not exist before, otherwise the script will not touch your existing INSTALL_PATH
+3. Run `~/DevOps/shell_scripts/conda/install_miniconda.sh` INSTALL_PATH to install miniconda under INSTALL_PATH (better be full path under your home directory), whose default value is ~/miniconda2 if you don't specify it. It must not exist before, otherwise the script will not touch your existing INSTALL_PATH
 
-4. After that, you should add a line like **export PATH=${HOME}/miniconda2/bin:$PATH** (depending on INSTALL_PATH) into files like .bashrc (if you are on CNBC cluster), so that conda related commands are always available. (If you don't do this, you have to make sure conda is in PATH before running any scripts below)
+4. After that, you should add a line like `export PATH=${HOME}/miniconda2/bin:$PATH` (depending on INSTALL_PATH) into files like .bashrc (if you are on CNBC cluster), so that conda related commands are always available. (If you don't do this, you have to make sure conda is in PATH before running any scripts below)
