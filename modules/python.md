@@ -1,7 +1,6 @@
 # Install python and related packages
 
-1. ~/DevOps/shell_scripts/conda/envs/default.sh and
-2. ~/DevOps/shell_scripts/conda/envs/default-3.sh are two scripts to install a 'default' Python 2/3 environment, respectively. Currently, by default, I mean the following set of packages from conda-forge (plus Python 2 or 3, of course):
+1. ~/DevOps/shell_scripts/conda/envs/default.sh and ~/DevOps/shell_scripts/conda/envs/default-3.sh are two scripts to install a 'default' Python 2/3 environment, respectively. Currently, by default, I mean the following set of packages from conda-forge (plus Python 2 or 3, of course):
 
     numpy
     scipy
