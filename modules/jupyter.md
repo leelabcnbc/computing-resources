@@ -3,11 +3,11 @@
 As of 20170801, this works with the GPU nodes of the CNBC cluster. Similar methods should work for CPU nodes as well.
 
 1. Get an interactive session on a compute node with `srun`, such as `srun -N1 --cpus-per-task=24 --gres=gpu:4 --mem=0 --time=4-0:00:00 --pty bash`. Check [here](./slurm.md) for detail.
-2. create several `tmux` sessions. a recap of tmux usage:
-    * Use `tmux` to create a new sessions
-    * Press `Ctrl+b c` to create more sessions
-    * Toggle between the sessions by pressing `Ctrl+b <session no>`
-    * close a session by pressing `Ctrl+b x`
+2. create several `tmux` windows. a recap of tmux usage. Check <https://danielmiessler.com/study/tmux/>:
+    * Use `tmux` to create a new session
+    * Press `Ctrl+b c` to create a new window. 
+    * Toggle between the windows by pressing `Ctrl+b <session no>`
+    * close a window by pressing `Ctrl+b x`.
 3. In one session (such as 0), run `~/DevOps/connection_scripts/slurm_create_one_port_mapping.sh` for SSH mapping from compute node to head node. You will see some port number given to you, such as `8896`. Denote it as `PORT`. **Keep this session open when running Jupyter**. You should see something like this.
    ~~~
    Paste ssh command in a terminal on local host (i.e., laptop)
