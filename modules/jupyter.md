@@ -25,5 +25,5 @@ As of 20170801, this works with the GPU nodes of the CNBC cluster. Similar metho
 7. When everything is finished, remember to kill the following things.
     * `ssh` command on your local terminal
     * `ssh` in the first session of the compute node. You **must** also run `kill $(lsof -t -i:<PORT>)` in the same session as an additional safety net. Otherwise, available ports may get fewer and fewer. After running this command, you may or may not get any output. Ignore that. Just remember to always run it after stopping the `ssh` in the compute node.
-        * you can also use `ps aux | grep ssh` to check whether you have some zombie `ssh` commands left, track their process ids, and use `kill` to kill them.
+    * if you forget to do `kill $(lsof -t -i:<PORT>)`, and find ports fewer and fewer, you can also use `ps aux | grep ssh` (on compute nodes) to check whether you have some zombie `ssh` commands left, track their process ids, and use `kill` to kill them.
     * `jupyter`.
