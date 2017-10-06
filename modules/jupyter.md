@@ -2,7 +2,7 @@
 
 As of 20170801, this works with the GPU nodes of the CNBC cluster. Similar methods should work for CPU nodes as well.
 
-1. Get an interactive session on a compute node with `srun`, such as `srun -N1 --cpus-per-task=24 --gres=gpu:4 --mem=0 --time=4-0:00:00 --pty bash`
+1. Get an interactive session on a compute node with `srun`, such as `srun -N1 --cpus-per-task=24 --gres=gpu:4 --mem=0 --time=4-0:00:00 --pty bash`. Check [here](./slurm.md) for detail.
 2. create several `tmux` sessions. a recap of tmux usage:
     * Use `tmux` to create a new sessions
     * Press `Ctrl+b c` to create more sessions
@@ -25,4 +25,5 @@ As of 20170801, this works with the GPU nodes of the CNBC cluster. Similar metho
 7. When everything is finished, remember to kill the following things.
     * `ssh` command on your local terminal
     * `ssh` in the first session of the compute node. You **must** also run `kill $(lsof -t -i:<PORT>)` in the same session as an additional safety net. Otherwise, available ports may get fewer and fewer. After running this command, you may or may not get any output. Ignore that. Just remember to always run it after stopping the `ssh` in the compute node.
+        * you can also use `ps aux | grep ssh` to check whether you have some zombie `ssh` commands left, track their process ids, and use `kill` to kill them.
     * `jupyter`.
