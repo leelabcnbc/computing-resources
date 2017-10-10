@@ -6,12 +6,12 @@
 * `modules` contains detailed explanations for individual programs, pacakges, etc.
 
 ## tutorials
-* Read [jupyter_quickstart](../tutorials/jupyter_quickstart.md) to access jupyter notebook using the cluster
+* Read [jupyter_quickstart](./tutorials/jupyter_quickstart.md) to access jupyter notebook using the cluster
 
 ## modules
-* Installing [miniconda]( ../modules/miniconda.md)
-* Installing [python](../modules/python.md)
-* Using [Jupyter Notebook](../modules/jupyter.md)
+* Installing [miniconda](./modules/miniconda.md)
+* Installing [python](./modules/python.md)
+* Using [Jupyter Notebook](./modules/jupyter.md)
 
 
 ## where to report problems
