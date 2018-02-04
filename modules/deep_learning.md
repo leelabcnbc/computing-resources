@@ -21,8 +21,8 @@ Easy.
 2. Make the following choices regarding OS, Python, CUDA, etc.
 	* OS = `Linux`, Package Manager = `pip`
 	* Python version shoud be the same as the Python version of environment `X`.
-	* CUDA should be have a version that is as new as possible as long as it is allowed by the NVIDIA driver on GPU cluster. Implicitly, the latest cuDNN compatible with this CUDA version is also chosen. As of 02/04/2018, this must be 8. 
-		* There is a catch with the current old NVIDIA driver. Current driver won't allow RNN operations to function properly. Check [release notes of cuDNN v7](http://docs.nvidia.com/deeplearning/sdk/cudnn-release-notes/rel_704.html#rel_704). 
+	* CUDA should be have a version that is as new as possible as long as it is allowed by the NVIDIA driver on GPU cluster. Implicitly, the latest cuDNN compatible with this CUDA version is also chosen. As of 02/04/2018, we should choose CUDA 8 (bundled with cuDNN 7) for the cluster. 
+		* There is a catch with the current old NVIDIA driver on the cluster. Current driver won't allow RNN operations to function properly. Check [release notes of cuDNN v7](http://docs.nvidia.com/deeplearning/sdk/cudnn-release-notes/rel_704.html#rel_704). 
 3. Now follow commands on the website like the following. Change `pip3` to `pip`.
 	
 	~~~
