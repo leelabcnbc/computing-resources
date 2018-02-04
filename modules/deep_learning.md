@@ -43,6 +43,7 @@ More tricky. The following instruction applies to TensorFlow 1.4.1.
 * Install some additional dependencies by executing the following command.
 	
 	~~~
+	# see <https://conda.io/docs/spec.html#package-match-specifications>. Need double quote.
 	conda install -c conda-forge --no-update-dependencies "protobuf>=3.4.0" "mock>=2.0.0"
 	~~~
 * Install TensorFlow by executing the following command. There should be only two changes to existing packages (`bleach` and `html5lib`, as TensorBoard need specific versions of them), as of 02/04/2018.
