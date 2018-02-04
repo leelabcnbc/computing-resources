@@ -9,10 +9,10 @@
 * Read [jupyter_quickstart](./tutorials/jupyter_quickstart.md) to access jupyter notebook using the cluster
 
 ## modules
-* Installing [miniconda](./modules/miniconda.md)
-* Installing [python](./modules/python.md)
+* Installing [miniconda](./modules/miniconda.md), as well as tmux
+* Installing [python](./modules/python.md) and basic packages
 * Using [Jupyter Notebook](./modules/jupyter.md)
-
+* Installing [deep learning frameworks](./modules/deep_learning.md)
 
 ## where to report problems
 
