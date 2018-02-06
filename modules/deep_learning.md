@@ -35,11 +35,11 @@ Easy.
 
 ## TensorFlow
 
-More tricky. The following instruction applies to TensorFlow 1.4.1.
+More tricky. The following instruction applies to TensorFlow 1.5.0.
 
 ### installation
 
-* Install CUDA 8 and cuDNN v6. Follow old wiki.
+* Install CUDA 9 and cuDNN v7. Follow old wiki to get a hint. Notice that you don't need to set alias for CUDA 9 any more.
 * Install some additional dependencies by executing the following command.
 	
 	~~~
@@ -48,7 +48,7 @@ More tricky. The following instruction applies to TensorFlow 1.4.1.
 * Install TensorFlow by executing the following command. There should be only two changes to existing packages (`bleach` and `html5lib`, as TensorBoard need specific versions of them), as of 02/04/2018.
 
 	~~~
-	pip install /data2/leelab/software/tensorflow/gpu/py36/tensorflow-1.4.1-cp36-cp36m-linux_x86_64.whl
+	pip install /data2/leelab/software/tensorflow/gpu/py36/tensorflow-1.5.0-cp36-cp36m-linux_x86_64.whl
 	~~~
 
 Check `/data2/leelab/software/tensorflow/` for other versions.
@@ -58,8 +58,8 @@ Check `/data2/leelab/software/tensorflow/` for other versions.
 always run the following two lines first to make sure CUDA and cuDNN libraries can be found.
 
 ~~~
-. ~/DevOps/env_scripts/add_cuda_lib.sh
-. ~/DevOps/env_scripts/add_cudnn_v6.sh
+. ~/DevOps/env_scripts/add_cuda_lib_v9.sh
+. ~/DevOps/env_scripts/add_cudnn_v7.sh
 ~~~
 
 

@@ -1,5 +1,7 @@
 # computing-resources
 
+**ALWAYS CHECK "ISSUES" FOR UPDATES NOT INCORPORATED INTO THE REPO**.
+
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/cnbc-computing-resources)
 
 * `tutorials` contains recipes for performing specific tasks on the cluster.
