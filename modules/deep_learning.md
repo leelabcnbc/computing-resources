@@ -55,7 +55,7 @@ Check `/data2/leelab/software/tensorflow/` for other versions.
 
 ### usage
 
-always run the following two lines first to make sure CUDA and cuDNN libraries can be found or add them to your ~/.bashrc
+always run the following two lines first to make sure CUDA and cuDNN libraries can be found or add them to your `~/.bashrc` (the latter is discouraged by Yimeng, as Yimeng thinks such convenience can have side effects).
 
 ~~~
 . ~/DevOps/env_scripts/add_cuda_lib_v9.sh
