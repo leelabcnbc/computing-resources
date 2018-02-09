@@ -9,9 +9,9 @@
 
 Before you want to install any deep learning framework, you should first install a 'default' Python environment by following [this module](./python.md). Let's say the environment you install is called `X`. 
 
-Everything below is only tested under Python 3.
+Everything below is only tested under Python 3 (that is, the `default-3` environment).
 
-In addition, Yimeng doesn't think using two frameworks in the same Python file is a good idea.
+In addition, Yimeng doesn't think using two frameworks in one Python file is a good idea.
 
 ## PyTorch
 
@@ -21,7 +21,7 @@ Easy.
 2. Make the following choices regarding OS, Python, CUDA, etc.
 	* OS = `Linux`, Package Manager = `pip`
 	* Python version shoud be the same as the Python version of environment `X`.
-	* CUDA should be have a version that is as new as possible as long as it is allowed by the NVIDIA driver on GPU cluster. Implicitly, the latest cuDNN compatible with this CUDA version is also chosen. As of 02/08/2018, we should choose CUDA 9 (bundled with cuDNN 7) for the cluster. 
+	* CUDA should be the highest version allowed by the NVIDIA driver on GPU cluster. Implicitly, the latest cuDNN compatible with this CUDA version is also chosen. As of 02/08/2018, we should choose CUDA 9 (bundled with cuDNN 7) for the cluster. 
 3. Now follow commands on the website like the following. Change `pip3` to `pip`.
 	
 	~~~
