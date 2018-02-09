@@ -1,6 +1,6 @@
 # computing-resources
 
-**ALWAYS CHECK "ISSUES" FOR UPDATES NOT INCORPORATED INTO THE REPO**.
+**ALWAYS CHECK "ISSUES" FOR UPDATES NOT INCORPORATED INTO THE REPO. CONTRIBUTIONS ARE WELCOME.**
 
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/cnbc-computing-resources)
 
