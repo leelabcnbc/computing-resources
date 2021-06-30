@@ -2,6 +2,13 @@
 
 **ALWAYS CHECK "ISSUES" FOR UPDATES NOT INCORPORATED INTO THE REPO. CONTRIBUTIONS ARE WELCOME.**
 
+## cluster and ML documentation
+
+A PDF overview (and the TeX source that generates it, with embedded files) of
+cluster usage, basic PyTorch info, and neural response modeling is now
+available. The older tutorials from Yimeng still may be useful, but some
+material might be out of date, and they're organized differently.
+
 [![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/cnbc-computing-resources)
 
 * `tutorials` contains recipes for performing specific tasks on the cluster.
